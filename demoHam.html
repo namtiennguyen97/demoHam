@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoHam</title>
+    <script src="core.js"></script>
+</head>
+<body>
+<script>
+  // tao ham su kien the confirm
+    function sukienCF(answer) {
+        let option = "";
+        if (answer){
+            option = " You can't stood a chance!";
+        } else {
+            option ="How dare you refuse me?!";
+        }
+        return option;
+    }
+    // xong ham option;
+    // xay dung ham confirm gan vs cac lua chon
+    let question = confirm("Hey! Don't you come closer! Give a try to challenge me?");
+    let bienAo = sukienCF(question);
+    alert(bienAo);
+</script>
+</body>
+</html>
